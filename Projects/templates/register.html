@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Management</title>
+</head>
+<body style="background-color: #ff4d94">
+<center><h1 style="font-family:Algerian;">Registration</h1></center>
+
+ 	 	 	<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<center><form action="/register" method="POST" style="border-radius: 25px;background: #ffcce0;font-family:Andulus;font-size:100%;padding: 20px;width: 650px;height: 520px;">
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+
+</div>
+
+<div class="login-form">
+
+<div class="control-group">
+ <input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" class="login-field" value="" placeholder="ID" name="id" pattern="(?=.*[1-9]).{1,}" title="Must be integers only" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+<div class="control-group">
+<input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;"class="login-field" value="" placeholder="Student Name" name="student_name" pattern="[a-zA-Z]{3,}$" title="Enter Valid name" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div>
+<div class="control-group"></br>
+
+<input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" class="login-field" value="" placeholder="Father Name" name="father_name" pattern="[a-zA-Z]{3,}$" title="Enter Valid name" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+<div class="control-group">
+	<input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" class="login-field" value="" placeholder="Date Of Birth" name="dob" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+<div class="control-group">
+	<input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" class="login-field" value="" placeholder="Phone Number" name="phno" pattern="[0-9]{10}" title="Enter valid  number" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+<div class="control-group">
+	<input type="text" class="login-field" value="" placeholder="Email"  style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[ style="border-radius: 25px;text-align:center;width: 150px;height: 25px;"a-z]{2,}$" title="Enter valid mail-id" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+
+<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Gender"   style="border-radius: 25px;text-align:center;width: 150px;height: 25px;"name="Gender" pattern="[a-zA-Z]{1,}$" title="Enter Valid details" required>
+<label class="radio" for="login-name"></label></div></br>
+
+
+
+
+
+<div class="control-group">
+		<input type="text" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" class="login-field" value="" placeholder="Room No" name="Roomno" pattern="[0-9]{1,}" title="Enter vali d number" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+
+
+
+<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Address" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" name="Address" pattern="[a-zA-Z]{3,}$" title="Enter text-align:center;width:  Valid details" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+
+<div class="control-group">
+		<input type="text" class="login-field" value="" placeholder="Amount" style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" name="Amount" pattern="[0-9]{4,}" title="Enter valid amount" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div></br>
+
+
+<input type="submit" value="Register" style="border-radius: 25px;height:35px;width:150px;background-color: #ff4d94;" class="btn btn-primary btn-large btn-block">
+
+</div>
+</div>
+</div>
+</form></center>
+			<div>
+				<img style="display: block;margin-left: auto;margin-right: auto;width: 30%;" src="/static/registration.jpg">
+			</div>
+</body>
+</html>

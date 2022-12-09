@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Management</title>
+</head>
+<body style="background-color: #ff4d94">
+
+
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+
+You're logged in already!
+
+{% else %}
+</br>
+<center><h1 style="font-family:Algerian;">Hostel Management</h1></center>
+<br>
+<center><form action="/login" method="POST" style="border-radius: 25px;background: #ffcce0;font-family:Andulus;font-size:100%;padding: 20px;width: 650px;height: 400px;" >
+<img style="float:left;" src="Admin-icon.png">
+<div class="login" >
+<div class="login-screen">
+<div class="app-title"></br>
+<h1>LOGIN</h1></br></br>
+</div>
+<div class="login-form">
+<div class="control-group">
+USERNAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" type="text" class="login-field" value="" placeholder="username" name="username" required>
+<label class="login-field-icon fui-user" for="login-name"></label></div>
+<div class="control-group"></br></br>
+PASSWORD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="border-radius: 25px;text-align:center;width: 150px;height: 25px;" type="password" class="login-field" value="" placeholder="password" name="password" required></br></br></br></br>
+<label class="login-field-icon fui-lock" for="login-pass"></label></div>
+<center><input type="submit" style="border-radius: 25px;height:35px;width:150px;background-color: #ff4d94;" value="SUBMIT" class="btn btn-primary btn-large btn-block"></center>
+<br>
+
+
+</div>
+</div>
+</div>
+
+<div>
+	
+</form></center>
+<!--<a align="center" href="/form">Register</a>
+			{% endif %}
+{% endblock %}--></div>
+
+</body>
+</html>
